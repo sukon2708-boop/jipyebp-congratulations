@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ความทรงจำแสนพิเศษ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+     <div class="card">
+    <div class="page">
+    <div class="shell center">
+      <h1>ความทรงจำแสนพิเศษ</h1>
+      <p class="subtle">กดรูปเพื่อดูใหญ่</p>
+
+      <div class="gallery" id="gallery"></div>
+
+      <div style="margin-top:18px;">
+        <a class="btn secondary" href="menu.html">ย้อนกลับ</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal center">
+      <img id="bigImg" alt="memory" style="width:100%; border-radius:18px; box-shadow: var(--shadow-soft);" />
+      <div class="row">
+        <button class="btn" id="closeModalBtn">ปิด</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/memories.js"></script>
+  
+</body>
+</html>

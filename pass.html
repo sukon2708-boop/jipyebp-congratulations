@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ใส่รหัสผ่าน</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="shell">
+
+      <!-- layout ซ้ายรูป ขวาใส่รหัส -->
+      <div class="pass-layout">
+
+        <!-- ฝั่งรูป -->
+        <div class="pass-image">
+          <img src="assets/pic1.png" alt="cute gif">
+        </div>
+
+        <!-- ฝั่งใส่รหัส -->
+        <div class="pink-panel pass-box center">
+          <h2>กรอกรหัสผ่าน</h2>
+          <div class="note">คำใบ้: รหัสคือ (1234)</div>
+
+          <div class="digits" id="digits"></div>
+          <div class="keypad" id="keypad"></div>
+
+          <div style="margin-top:12px;">
+            <button class="btn secondary" id="clearBtn">ล้าง</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- modal -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal center">
+      <h3 id="modalTitle">ลองใหม่</h3>
+      <p id="modalMsg">รหัสไม่ถูกต้อง ลองใหม่อีกครั้งนะ</p>
+      <div class="row">
+        <button class="btn" id="closeModalBtn">ปิด</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/pass.js"></script>
+  <div class="bg-heart-layer">
+  <span>💗</span>
+  <span>💖</span>
+  <span>💕</span>
+  <span>💘</span>
+  <span>💞</span>
+  <span>💓</span>
+</div>
+</body>
+</html>
